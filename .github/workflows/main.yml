@@ -16,4 +16,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: webview_${{github.sha}}
-          path: D:\a\webview\webview\script\..\dll\x64\webview.dll        
+          path: D:\a\webview\webview\dll\x64\webview.dll        
