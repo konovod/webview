@@ -28,6 +28,11 @@ jobs:
       - name: Build and run tests
         run: ./script/build.bat
         shell: cmd
+      - name: Upload webview.dll
+        uses: actions/upload-artifact@v2
+        with:
+          name: webview_${{github.sha}}
+          path: D:\a\webview\webview\script\..\dll\x64\webview.dll
 
   swig:
     runs-on: ubuntu-latest
